@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Test {
 
 
-public static String smallestWindow(String s , String pat)
+public static String smallestNum(String s , String pat)
 {
 
 if(s==null || s.length()==0) return "-1";
@@ -47,12 +47,13 @@ for(hi=0;hi<s.length();hi++)
 
  public static void main(String[] args) {
 Scanner s = new Scanner(System.in);
+ //String str = s.nextLine();  you can take input from here 
 String str =  "FORCESABCDEFDIVGHIJKLMNOPQRSTUVWXYZ";
 String str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
    
-   String st= smallestWindow(str , str1);
+   String st= smallestNum(str , str1);
 
    System.out.println(st.length());
 }

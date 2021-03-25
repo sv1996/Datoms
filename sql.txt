@@ -1,0 +1,9 @@
+//find first name , last_nname , city , age and course_name = maths or physics
+
+SELECT STU_ID , FIRST_NAME, LAST_NAME , CITY , AGE (getdate() - Year(DOB)) FROM STUDENT 
+JOIN COURSE ON STU_ID= COURSE.STU_ID
+WHERE COURSE.COURSE_NAME = 'PHYSICS' OR COURSE.COURSE_NAME ='MATHS';
+
+
+
+// USED getdate method to get current age 
