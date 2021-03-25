@@ -55,11 +55,11 @@ String str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    
    String st= smallestNum(str , str1);
 
-   System.out.println(st.length());
+   System.out.println("Substring length is ->"+ st.length());
 }
 
 
  }
  
- 
+ // OUTPUT Substring length is -> 29 
  
